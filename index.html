@@ -16,7 +16,7 @@
     <div class="text-center w-25 mt-5 shadow-lg p-3 mb-5 bg-white rounded">
         <h1>TP: EventBinding</h1>
         <div class="card" id="app">
-            <input type="text" @input="displayInput($event)">
+            <input type="text" @keyup="displayInput($event)">
             <p>{{text}}</p><br>
             <input type="text" @keyup.esc="displayInputEsc($event)"><br>
             <p>{{text2}}</p><br>
