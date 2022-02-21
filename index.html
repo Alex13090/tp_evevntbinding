@@ -17,8 +17,9 @@
         <h1>TP: EventBinding</h1>
         <div class="card" id="app">
             <input type="text" @input="displayInput($event)">
-            <span>{{text}}</span><br>
-            <input type="text" @keyup="nonDisplayInput()"><br>
+            <p>{{text}}</p><br>
+            <input type="text" @keyup.esc="displayInputEsc($event)"><br>
+            <p>{{text2}}</p><br>
             <button @click ="displayAlert()" type="button" class="btn btn-success">Alert</button>
         </div>
     </div>

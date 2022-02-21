@@ -2,7 +2,8 @@
 Vue.createApp({
     data() {
         return {
-            text: ''
+            text: '',
+            text2: ''
         };
     },
 
@@ -11,8 +12,12 @@ Vue.createApp({
             this.text = event.target.value;
         },
 
+        displayInputEsc(event) {
+            this.text2 = event.target.value;
+        },
+
         displayAlert() {
-            window.alert("Alert generale !");
+            alert("Alert generale !");
         }
     },
 }).mount('#app');
